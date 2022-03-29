@@ -1,0 +1,52 @@
+
+#canvas {
+    border: black 1px solid;
+    height: 98vh;
+    font-family: 'Oswald', sans-serif;
+}
+
+#main {
+    height: 25%;
+    width: 99.5%;
+    border: green 1px solid;
+    margin: 2px;
+}
+
+#leftSide {
+    width: 30%;
+    height: 50%;
+    border: red 1px solid;
+    float: left;
+    margin: 2px;
+}
+
+#rightSide {
+    width: 69.5%;
+    height: 50%;
+    overflow: hidden;
+    border: blue 1px solid;
+    margin: 2px;
+}
+
+.label, #wood-display, #wood-passive-label, #stone-passive-label, #coal-passive-label, #gold-passive-label {
+    display: inline;
+}
+
+.grid-container {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 50px auto auto auto;
+}
+
+.grid-item {
+    border: green 1px solid;
+    height: 30px;
+    min-width: 30px;
+    margin: 2px;
+    padding: 5px;
+}
+
+.plusButton {
+    height: 30px;
+    width: 100px;
+}

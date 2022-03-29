@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Improved Idle Game</title>
+
+    <!-- CSS -->
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="canvas">
+        <div id="leftSide">
+            <div class="grid-container">
+                <div class="grid-item"><p class="label">Wood: </p></div>
+                <div class="grid-item"><p class="label" id="wood-display">0</p></div>
+                <div class="grid-item"><button class="plusButton" id="woodButton" onclick="clickInc(this.id)">+Wood</button></div>
+                <div class="grid-item"><p id="wood-passive-label">0</p></div>
+                <div class="grid-item"><p class="label">Stone: </p></div>
+                <div class="grid-item"><p class="label" id="stone-display">0</p></div>
+                <div class="grid-item"><button class="plusButton" id="stoneButton" onclick="clickInc(this.id)">+Stone</button></div>
+                <div class="grid-item"><p id="stone-passive-label">0</p></div>
+                <div class="grid-item"><p class="label">Coal: </p></div>
+                <div class="grid-item"><p class="label" id="coal-display">0</p></div>
+                <div class="grid-item"><button class="plusButton" id="coalButton" onclick="clickInc(this.id)">+Coal</button></div>
+                <div class="grid-item"><p id="coal-passive-label">0</p></div>
+                <div class="grid-item"><p class="label">Gold: </p></div>
+                <div class="grid-item"><p class="label "id="gold-display">0</p></div>
+                <div class="grid-item"><button class="plusButton" id="goldButton" onclick="clickInc(this.id)">+Gold</button></div>
+                <div class="grid-item"><p class="label" id="gold-passive-label">0</p></div>
+            </div>
+        </div>
+        <div id="rightSide">
+            <button onclick="upgradeCostCheck(25, 0, 0, 10)">Hire woodcutter</button>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/globalTick.js"></script>
+    <script src="js/buttonOnclick.js"></script>
+    <script src="js/liveDisplay.js"></script>
+</body>
+</html>
