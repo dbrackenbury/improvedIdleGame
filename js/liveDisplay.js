@@ -1,8 +1,10 @@
 woodDisplay = document.getElementById('wood-display')
+foodDisplay = document.getElementById('food-display')
 stoneDisplay = document.getElementById('stone-display')
 coalDisplay = document.getElementById('coal-display')
 goldDisplay = document.getElementById('gold-display')
 idleWoodDisplay = document.getElementById('wood-passive-label')
+idleFoodDisplay = document.getElementById('food-passive-label')
 idleStoneDisplay = document.getElementById('stone-passive-label')
 idleCoalDisplay = document.getElementById('coal-passive-label')
 idleGoldDisplay = document.getElementById('gold-passive-label')
@@ -12,6 +14,10 @@ function liveDisplay(display) {
     switch(display) {
         case "wood":
             woodDisplay.innerHTML = liveWood.toString();
+            break;
+
+        case "food":
+            foodDisplay.innerHTML = liveFood.toString();
             break;
 
         case "stone":
@@ -29,6 +35,8 @@ function liveDisplay(display) {
         case "all":
             woodDisplay.innerHTML = liveWood.toString();
             idleWoodDisplay.innerHTML = idleWood.toString();
+            foodDisplay.innerHTML = liveFood.toString();
+            idleFoodDisplay.innerHTML = idleFood.toString();
             stoneDisplay.innerHTML = liveStone.toString();
             idleStoneDisplay.innerHTML = idleStone.toString();
             coalDisplay.innerHTML = liveCoal.toString();

@@ -21,14 +21,15 @@
 }
 
 #rightSide {
-    width: 69.5%;
+    width: 69%;
     height: 50%;
     overflow: hidden;
     border: blue 1px solid;
     margin: 2px;
+    padding-left: 5px;
 }
 
-.label, #wood-display, #wood-passive-label, #stone-passive-label, #coal-passive-label, #gold-passive-label {
+.label, #wood-display, #wood-passive-label, #food-passive-label, #stone-passive-label, #coal-passive-label, #gold-passive-label {
     display: inline;
 }
 

@@ -7,6 +7,11 @@ function clickInc(buttonId) {
             liveDisplay('wood')
             break;
 
+        case "foodButton":
+            liveFood++;
+            liveDisplay('food')
+            break;
+
         case "stoneButton":
             liveStone++;
             liveDisplay('stone')
