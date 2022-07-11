@@ -13,43 +13,69 @@
 <body>
     <div id="canvas">
         <div id="leftSide">
+            <h1>Materials</h1>
             <div class="grid-container">
                 <div class="grid-item"><p class="label">Wood: </p></div>
                 <div class="grid-item"><p class="label" id="wood-display">0</p></div>
-                <div class="grid-item"><button class="plusButton" id="woodButton" onclick="clickInc(this.id)">+Wood</button></div>
-                <div class="grid-item"><p id="wood-passive-label">0</p></div>
+                <div class="grid-item"><button class="plusButton" id="woodButton" onclick="clickInc(this.id)">+Wood
+                </button></div>
+                <div class="grid-item"><p id="wood-passive-label">0</p><p class="label">/s</p></div>
                 <div class="grid-item"><p class="label">Food: </p></div>
                 <div class="grid-item"><p class="label" id="food-display">0</p></div>
-                <div class="grid-item"><button class="plusButton" id="foodButton" onclick="clickInc(this.id)">+Food</button></div>
-                <div class="grid-item"><p id="food-passive-label">0</p></div>
+                <div class="grid-item"><button class="plusButton" id="foodButton" onclick="clickInc(this.id)">+Food
+                </button></div>
+                <div class="grid-item"><p id="food-passive-label">0</p><p class="label">/s</p></div>
                 <div class="grid-item"><p class="label">Stone: </p></div>
                 <div class="grid-item"><p class="label" id="stone-display">0</p></div>
-                <div class="grid-item"><button class="plusButton" id="stoneButton" onclick="clickInc(this.id)">+Stone</button></div>
-                <div class="grid-item"><p id="stone-passive-label">0</p></div>
+                <div class="grid-item"><button class="plusButton" id="stoneButton" onclick="clickInc(this.id)">+Stone
+                </button></div>
+                <div class="grid-item"><p id="stone-passive-label">0</p><p class="label">/s</p></div>
                 <div class="grid-item"><p class="label">Coal: </p></div>
                 <div class="grid-item"><p class="label" id="coal-display">0</p></div>
-                <div class="grid-item"><button class="plusButton" id="coalButton" onclick="clickInc(this.id)">+Coal</button></div>
-                <div class="grid-item"><p id="coal-passive-label">0</p></div>
+                <div class="grid-item"><button class="plusButton" id="coalButton" onclick="clickInc(this.id)">+Coal
+                </button></div>
+                <div class="grid-item"><p id="coal-passive-label">0</p><p class="label">/s</p></div>
                 <div class="grid-item"><p class="label">Gold: </p></div>
                 <div class="grid-item"><p class="label" id="gold-display">0</p></div>
-                <div class="grid-item"><button class="plusButton" id="goldButton" onclick="clickInc(this.id)">+Gold</button></div>
-                <div class="grid-item"><p class="label" id="gold-passive-label">0</p></div>
+                <div class="grid-item"><button class="plusButton" id="goldButton" onclick="clickInc(this.id)">+Gold
+                </button></div>
+                <div class="grid-item"><p class="label" id="gold-passive-label">0</p><p class="label">/s</p></div>
+                <div class="grid-item"><p class="label"></p></div>
+                <div class="grid-item-right"><p class="label">Population: </p></div>
+                <div class="grid-item"><p class="label" id="population-label">0</p><p class="label"> / </p>
+                    <p class="label" id="population-cap-label">9</p></div>
             </div>
         </div>
         <div id="rightSide">
-            <button onclick="upgradeCostCheck(0, 25, 0, 0, 10, 1, 0, 0, 0, 0)">Hire Woodcutter: Wood +1/s <br>Cost: 25 Food / 10 Gold</button>
-            <button onclick="upgradeCostCheck(0, 25, 0, 0, 10, 0, 1, 0, 0, 0)">Hire Chef: Food +1/s <br>Cost: 25 Food / 10 Gold</button>
-            <button onclick="upgradeCostCheck(0, 25, 0, 0, 10, 0, 0, 1, 0, 0)">Hire Stone miner: Stone +1/s <br>Cost: 25 Food / 10 Gold</button>
-            <button onclick="upgradeCostCheck(0, 25, 0, 0, 10, 0, 0, 0, 1, 0)">Hire Coal miner: Coal +1/s <br>Cost: 25 Food / 10 Gold</button>
-            <button onclick="upgradeCostCheck(0, 25, 0, 0, 10, 0, 0, 0, 0, 1)">Hire Gold miner: Gold +1/s <br>Cost: 25 Food / 10 Gold</button>
+            <h1>Upgrades</h1>
+            <div class="grid-container2">
+                <button id="wood-idle" onclick="materialCostCheck(this.id)">Hire Woodcutter<br>( 1 Wood / s )<br>
+                    Cost: 5 Food / 5 Gold</button>
+                <button id="food-idle" onclick="materialCostCheck(this.id)">Hire Chef<br>( 1 Food / s)<br>
+                    Cost: 5 Food / 5 Gold</button>
+                <button id="stone-idle" onclick="materialCostCheck(this.id)">Hire Stonecutter<br>( 1 Stone / s)<br>
+                    Cost: 5 Food / 5 Gold</button>
+                <button id="coal-idle" onclick="materialCostCheck(this.id)">Hire Coal Miner<br>( 1 Coal / s)<br>
+                    Cost: 5 Food / 5 Gold</button>
+                <button id="gold-idle" onclick="materialCostCheck(this.id)">Hire Banker<br>( 1 Gold / s)<br>
+                    Cost: 5 Food / 5 Gold</button>
+                <button id="population-house" onclick="materialCostCheck(this.id)">Build House<br>(+9 Population)<br>
+                    Cost: 100 Wood / 50 Stone</button>
+            </div>
         </div>
     </div>
 
     <!-- JS -->
-    <script src="js/globalTick.js"></script>
-    <script src="js/buttonOnclick.js"></script>
-    <script src="js/liveDisplay.js"></script>
-    <script src="js/upgradeCost.js"></script>
-    <script src="js/idleInc.js"></script>
+    <script src="js/global-variables.js"></script>
+    <script src="js/display.js"></script>
+
+    <script src="js/Active/button-onclick.js"></script>
+
+    <script src="js/Passive/global-tick.js"></script>
+    <script src="js/Passive/idle-upgrade.js"></script>
+    <script src="js/Passive/material-check.js"></script>
+    <script src="js/Passive/material-spend.js"></script>
+    <script src="js/Passive/buildings.js"></script>
+
 </body>
 </html>

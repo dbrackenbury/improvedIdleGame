@@ -1,0 +1,17 @@
+/* CURRENT COUNTS */
+let LIVE_WOOD = 0;
+let LIVE_FOOD = 0;
+let LIVE_STONE = 0;
+let LIVE_COAL = 0;
+let LIVE_GOLD = 0;
+
+/* IDLE TICK PER SECOND*/
+let IDLE_WOOD = 0;
+let IDLE_FOOD = 0;
+let IDLE_STONE = 0;
+let IDLE_COAL = 0;
+let IDLE_GOLD = 0;
+
+/* POPULATION */
+let LIVE_POPULATION = 0;
+let POPULATION_CAP = 9;

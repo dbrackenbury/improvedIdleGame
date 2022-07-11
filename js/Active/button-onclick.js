@@ -1,30 +1,34 @@
 
-
 function clickInc(buttonId) {
     switch(buttonId) {
         case "woodButton":
-            liveWood++;
+            LIVE_WOOD++;
             liveDisplay('wood')
             break;
 
         case "foodButton":
-            liveFood++;
+            LIVE_FOOD++;
             liveDisplay('food')
             break;
 
         case "stoneButton":
-            liveStone++;
+            LIVE_STONE++;
             liveDisplay('stone')
             break;
 
         case "coalButton":
-            liveCoal++;
+            LIVE_COAL++;
             liveDisplay('coal')
             break;
 
         case "goldButton":
-            liveGold++;
+            LIVE_GOLD++;
             liveDisplay('gold')
+            break;
+
+        case "popButton":
+            POPULATION_CAP += 9;
+            liveDisplay('pop_cap')
             break;
 
         default:

@@ -21,12 +21,12 @@
 }
 
 #rightSide {
-    width: 69%;
+    width: 60%;
     height: 50%;
     overflow: hidden;
     border: blue 1px solid;
     margin: 2px;
-    padding-left: 5px;
+    padding-left: 50px;
 }
 
 .label, #wood-display, #wood-passive-label, #food-passive-label, #stone-passive-label, #coal-passive-label, #gold-passive-label {
@@ -39,12 +39,24 @@
     grid-template-columns: 50px auto auto auto;
 }
 
-.grid-item {
+.grid-container2 {
+    border: green 1px solid;
+    display: grid;
+    margin-top: 25px;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 80px auto auto auto auto;
+}
+
+.grid-item, .grid-item-right {
     border: green 1px solid;
     height: 30px;
     min-width: 30px;
     margin: 2px;
     padding: 5px;
+}
+
+.grid-item-right {
+    text-align: right;
 }
 
 .plusButton {
