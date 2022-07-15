@@ -29,7 +29,8 @@
     padding-left: 50px;
 }
 
-.label, #wood-display, #wood-passive-label, #food-passive-label, #stone-passive-label, #coal-passive-label, #gold-passive-label {
+.label, #wood-display, #wood-passive-label, #food-passive-label, #stone-passive-label, #coal-passive-label,
+#gold-passive-label {
     display: inline;
 }
 
